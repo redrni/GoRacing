@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +14,48 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamePad" translatesAutoresizingMaskIntoConstraints="NO" id="jcE-jb-U9b">
+                                <rect key="frame" x="188.5" y="488.5" width="411" height="467"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconFerrari" translatesAutoresizingMaskIntoConstraints="NO" id="QQR-Ej-ixR">
+                                <rect key="frame" x="286.5" y="238" width="195" height="268"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoRasing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky2-Dy-wHR">
+                                <rect key="frame" x="257" y="114" width="254.5" height="90"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="66"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Grey"/>
+                        <constraints>
+                            <constraint firstItem="QQR-Ej-ixR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3dz-Xp-syL"/>
+                            <constraint firstItem="QQR-Ej-ixR" firstAttribute="top" secondItem="Ky2-Dy-wHR" secondAttribute="bottom" constant="34" id="LG9-Sp-Vhj"/>
+                            <constraint firstItem="Ky2-Dy-wHR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NoG-Ka-XEr"/>
+                            <constraint firstItem="QQR-Ej-ixR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-150" id="Ps9-UR-5bM"/>
+                            <constraint firstItem="jcE-jb-U9b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="200" id="UPo-US-dwz"/>
+                            <constraint firstItem="jcE-jb-U9b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="10" id="h7l-fN-c0P"/>
+                            <constraint firstItem="Ky2-Dy-wHR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="kzO-x2-sb5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="51.612903225806456" y="374.66902030008822"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gamePad" width="411" height="467"/>
+        <image name="iconFerrari" width="195" height="268"/>
+        <namedColor name="Grey">
+            <color red="0.21568627450980393" green="0.27843137254901962" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
