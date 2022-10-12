@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var result: UIButton!
     @IBOutlet weak var settings: UIButton!
     @IBOutlet weak var exit: UIButton!
+    @IBOutlet weak var changeCar: UIButton!
 
     var playerName: String?
     
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
         result.layer.cornerRadius = 10.0
         settings.layer.cornerRadius = 10.0
         exit.layer.cornerRadius = 10.0
+        changeCar.layer.cornerRadius = 10.0
+      
         
     }
 
