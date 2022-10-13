@@ -23,7 +23,7 @@ class ResultTableTableViewController: UITableViewController {
 
         
         results.append(resultData(playerName: "test", resultGame: "test", timeGame: "test"))
-        
+//
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -49,7 +49,7 @@ class GameViewController: UIViewController {
     
     @IBAction func driveCarAction(_ sender:UIButton) {
         if stateSemafor == 2 {
-            userCar.center.x += 10
+            userCar.center.x += 30
         }
         if stateSemafor == 1 {
             userCar.center.x -= 10
