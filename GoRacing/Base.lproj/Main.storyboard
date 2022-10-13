@@ -308,26 +308,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="row" id="G80-qi-Y66">
-                                <rect key="frame" x="0.0" y="50" width="704" height="44"/>
+                                <rect key="frame" x="0.0" y="50" width="704" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G80-qi-Y66" id="uFv-Le-aU0" customClass="ResultTableViewCell" customModule="GoRacing" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="704" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="704" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="playerName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-wm-u5k">
-                                            <rect key="frame" x="20" y="11" width="91" height="22"/>
+                                            <rect key="frame" x="20" y="11" width="91" height="22.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-Rz-cDq">
-                                            <rect key="frame" x="307" y="10" width="90" height="21.5"/>
+                                            <rect key="frame" x="307" y="10" width="90" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-3x-g4z">
-                                            <rect key="frame" x="605.5" y="9" width="78.5" height="21"/>
+                                            <rect key="frame" x="605.5" y="9" width="78.5" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -381,17 +381,26 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="zkL-xZ-jvm" customClass="ChangeCarCollectionViewCell" customModule="GoRacing" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PCa-A5-SD4">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-3w-22n">
-                                            <rect key="frame" x="-70" y="-14" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-3w-22n">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="ECK-zC-VUK"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Qko-ux-s4z"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CfR-3w-22n" firstAttribute="centerY" secondItem="PCa-A5-SD4" secondAttribute="centerY" id="1EZ-hK-BkG"/>
+                                        <constraint firstItem="CfR-3w-22n" firstAttribute="centerX" secondItem="PCa-A5-SD4" secondAttribute="centerX" id="F3x-uh-50b"/>
+                                        <constraint firstItem="CfR-3w-22n" firstAttribute="leading" secondItem="PCa-A5-SD4" secondAttribute="leading" id="JUD-ja-5eF"/>
+                                        <constraint firstItem="CfR-3w-22n" firstAttribute="top" secondItem="PCa-A5-SD4" secondAttribute="top" id="nz3-gI-0GY"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="carPicture" destination="CfR-3w-22n" id="J3V-1i-Dyo"/>
@@ -422,7 +431,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Green">
-            <color red="0.29803921568627451" green="0.73725490196078436" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.29800000786781311" green="0.7369999885559082" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Grey">
             <color red="0.21600000560283661" green="0.27799999713897705" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
