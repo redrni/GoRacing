@@ -9,8 +9,8 @@ import UIKit
 
 struct resultData {
     var playerName: String
-    var resultName: String
-    var timeName: String
+    var resultGame: String
+    var timeGame: String
   
 }
 
@@ -21,7 +21,8 @@ class ResultTableTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        results.append(resultData(playerName: "test", resultName: "test", timeName: "test"))
+        
+        results.append(resultData(playerName: "test", resultGame: "test", timeGame: "test"))
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,8 +48,8 @@ class ResultTableTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "row", for: indexPath) as! ResultTableViewCell
         
         cell.namePlayer.text = results[indexPath.row].playerName
-        cell.gameResult.text = results[indexPath.row].resultName
-        cell.timeResult.text = results[indexPath.row].timeName
+        cell.gameResult.text = results[indexPath.row].resultGame
+        cell.timeResult.text = results[indexPath.row].timeGame
         
         // Configure the cell...
 

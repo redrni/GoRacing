@@ -103,7 +103,7 @@ class GameViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        results.append(resultData(playerName: "me", resultName: message, timeName: String(timeLeft)))
+        results.append(resultData(playerName: "me", resultGame: message, timeGame: String(timeLeft)))
     }
     
     
