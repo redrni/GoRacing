@@ -104,6 +104,8 @@ class GameViewController: UIViewController {
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
         results.append(resultData(playerName: "me", resultGame: message, timeGame: String(timeLeft)))
+        
+        
     }
     
     

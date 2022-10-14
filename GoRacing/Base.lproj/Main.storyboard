@@ -297,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wa6-4f-kqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="691"/>
+            <point key="canvasLocation" x="57" y="693"/>
         </scene>
         <!--Result Table Table View Controller-->
         <scene sceneID="Zaj-OP-NFq">
@@ -308,51 +308,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="row" id="G80-qi-Y66" customClass="ResultTableViewCell" customModule="GoRacing" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="704" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="G80-qi-Y66" customClass="ResultTableViewCell" customModule="GoRacing" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="704" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G80-qi-Y66" id="uFv-Le-aU0" customClass="ResultTableViewCell" customModule="GoRacing" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="704" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="704" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="playerName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-wm-u5k">
-                                            <rect key="frame" x="20" y="11" width="91" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-Rz-cDq">
-                                            <rect key="frame" x="307" y="10" width="90" height="21.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-3x-g4z">
-                                            <rect key="frame" x="605.5" y="9" width="78.5" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7Db-fk-2X4">
+                                            <rect key="frame" x="30" y="11" width="654" height="20"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="playerName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-wm-u5k">
+                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="20"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-Rz-cDq">
+                                                    <rect key="frame" x="133" y="0.0" width="79" height="20"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="gameTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-3x-g4z">
+                                                    <rect key="frame" x="262" y="0.0" width="392" height="20"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Zct-3x-g4z" firstAttribute="top" secondItem="uFv-Le-aU0" secondAttribute="topMargin" constant="-2" id="1MY-Ep-pEk"/>
-                                        <constraint firstItem="HIp-Rz-cDq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PMG-wm-u5k" secondAttribute="trailing" constant="8" symbolic="YES" id="2hn-Er-Ou2"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Zct-3x-g4z" secondAttribute="bottom" constant="3" id="3cC-7l-ZL1"/>
-                                        <constraint firstItem="Zct-3x-g4z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HIp-Rz-cDq" secondAttribute="trailing" constant="8" symbolic="YES" id="BRP-X4-3ox"/>
-                                        <constraint firstItem="HIp-Rz-cDq" firstAttribute="centerX" secondItem="uFv-Le-aU0" secondAttribute="centerX" id="Iv5-St-Geq"/>
-                                        <constraint firstItem="PMG-wm-u5k" firstAttribute="top" secondItem="uFv-Le-aU0" secondAttribute="topMargin" id="Y8l-KM-UPD"/>
-                                        <constraint firstItem="Zct-3x-g4z" firstAttribute="trailing" secondItem="uFv-Le-aU0" secondAttribute="trailingMargin" id="cHT-H7-Yn4"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="HIp-Rz-cDq" secondAttribute="bottom" constant="1.5" id="dj1-Vk-5rG"/>
-                                        <constraint firstItem="PMG-wm-u5k" firstAttribute="leading" secondItem="uFv-Le-aU0" secondAttribute="leadingMargin" id="fdN-AY-25B"/>
-                                        <constraint firstItem="HIp-Rz-cDq" firstAttribute="top" secondItem="uFv-Le-aU0" secondAttribute="topMargin" constant="-1" id="lzN-8F-kBH"/>
-                                        <constraint firstItem="PMG-wm-u5k" firstAttribute="centerY" secondItem="uFv-Le-aU0" secondAttribute="centerY" id="wb5-9f-8H9"/>
+                                        <constraint firstItem="7Db-fk-2X4" firstAttribute="leading" secondItem="uFv-Le-aU0" secondAttribute="leadingMargin" constant="10" id="2G5-bT-ALQ"/>
+                                        <constraint firstItem="7Db-fk-2X4" firstAttribute="top" secondItem="uFv-Le-aU0" secondAttribute="topMargin" id="5U8-9M-gSD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7Db-fk-2X4" secondAttribute="trailing" id="HQA-tr-g54"/>
                                     </constraints>
-                                    <connections>
-                                        <outlet property="gameResult" destination="HIp-Rz-cDq" id="eFd-Jg-C5S"/>
-                                        <outlet property="namePlayer" destination="PMG-wm-u5k" id="tuK-P5-IBM"/>
-                                        <outlet property="timeResult" destination="Zct-3x-g4z" id="SSE-Dq-qkJ"/>
-                                    </connections>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameResult" destination="HIp-Rz-cDq" id="AVn-Gh-Bgc"/>
+                                    <outlet property="namePlayer" destination="PMG-wm-u5k" id="ziA-Xm-8de"/>
+                                    <outlet property="timeResult" destination="Zct-3x-g4z" id="Oic-xw-siy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
