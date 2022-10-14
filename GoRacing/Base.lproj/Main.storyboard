@@ -54,7 +54,7 @@
                                             <segue destination="XdA-3G-tPf" kind="show" id="RCi-sB-cmC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pne-k5-IGc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pne-k5-IGc">
                                         <rect key="frame" x="0.0" y="180" width="300" height="60"/>
                                         <color key="backgroundColor" name="Yellow"/>
                                         <constraints>
@@ -70,17 +70,17 @@
                                             <action selector="settingsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0x-HT-Gkp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kha-Qr-K4l">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kha-Qr-K4l">
                                         <rect key="frame" x="0.0" y="270" width="300" height="60"/>
                                         <color key="backgroundColor" name="Yellow"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Wfq-Rr-UcP"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Change car">
-                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                            <color key="baseForegroundColor" name="Black"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Change car">
+                                            <color key="titleColor" name="Black"/>
+                                        </state>
                                         <connections>
                                             <segue destination="7W4-aV-Duu" kind="show" id="J9l-yh-KPq"/>
                                         </connections>
@@ -206,34 +206,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="242" translatesAutoresizingMaskIntoConstraints="NO" id="Ntb-F2-3Bo">
                                 <rect key="frame" x="432" y="680" width="562" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dir-0l-b4z">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dir-0l-b4z">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
                                         <color key="backgroundColor" name="Green"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="2GW-97-CqG"/>
                                             <constraint firstAttribute="height" constant="60" id="he3-M0-3fs"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
                                         <color key="tintColor" name="Green"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Drive">
-                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
-                                            <color key="baseForegroundColor" name="White"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Drive">
+                                            <color key="titleColor" name="White"/>
+                                        </state>
                                         <connections>
                                             <action selector="driveCarAction:" destination="c49-0C-6vt" eventType="touchUpInside" id="pdq-ci-iNV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5N-VB-dZy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5N-VB-dZy">
                                         <rect key="frame" x="402" y="0.0" width="160" height="60"/>
                                         <color key="backgroundColor" name="White"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="kei-hK-YbG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="mY3-W7-GkC"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="End Game">
-                                            <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
-                                            <color key="baseForegroundColor" name="Black"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="End Game">
+                                            <color key="titleColor" name="Black"/>
+                                        </state>
                                         <connections>
                                             <action selector="endGameAction:" destination="c49-0C-6vt" eventType="touchUpInside" id="EdT-SE-dIH"/>
                                             <segue destination="BYZ-38-t0r" kind="show" id="1Go-mu-fgX"/>
@@ -241,18 +242,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuX-iU-0zX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuX-iU-0zX">
                                 <rect key="frame" x="834" y="39" width="160" height="60"/>
                                 <color key="backgroundColor" name="Red"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="D0h-GD-C18"/>
                                     <constraint firstAttribute="height" constant="60" id="D8k-zo-iFe"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
-                                    <color key="baseForegroundColor" name="White"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" name="White"/>
+                                </state>
                                 <connections>
                                     <action selector="startGameAction:" destination="c49-0C-6vt" eventType="touchUpInside" id="i8T-xr-vpt"/>
                                 </connections>
@@ -308,26 +309,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="row" id="G80-qi-Y66">
-                                <rect key="frame" x="0.0" y="50" width="704" height="44.5"/>
+                                <rect key="frame" x="0.0" y="50" width="704" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G80-qi-Y66" id="uFv-Le-aU0" customClass="ResultTableViewCell" customModule="GoRacing" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="704" height="44.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="704" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="playerName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMG-wm-u5k">
-                                            <rect key="frame" x="20" y="11" width="91" height="22.5"/>
+                                            <rect key="frame" x="20" y="11" width="91" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-Rz-cDq">
-                                            <rect key="frame" x="307" y="10" width="90" height="22"/>
+                                            <rect key="frame" x="307" y="10" width="90" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gameTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-3x-g4z">
-                                            <rect key="frame" x="605.5" y="9" width="78.5" height="21.5"/>
+                                            <rect key="frame" x="605.5" y="9" width="78.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
